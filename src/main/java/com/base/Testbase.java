@@ -38,8 +38,8 @@ public class Testbase {
 
 		if (browsername.equalsIgnoreCase("chrome")) {
 
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\user\\Downloads\\chromedriver-win64\\chromedriver.exe");
+			/*System.setProperty("webdriver.chrome.driver",
+					"C:\\Users\\user\\Downloads\\chromedriver-win64\\chromedriver.exe");*/
 
 			driver = new ChromeDriver();
 
@@ -47,8 +47,8 @@ public class Testbase {
 
 		else if (browsername.equalsIgnoreCase("Edge")) {
 
-			System.setProperty("Webdriver.edge.driver",
-					"C:\\Users\\user\\OneDrive\\Desktop\\New folder\\msedgedriver.exe");
+			/*System.setProperty("Webdriver.edge.driver",
+					"C:\\Users\\user\\OneDrive\\Desktop\\New folder\\msedgedriver.exe");*/
 
 			driver = new EdgeDriver();
 
