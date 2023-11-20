@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-11T16:05:19 IST" name="Default suite" finished-at="2023-11-11T16:05:20 IST" duration-ms="1141">
+  <suite started-at="2023-11-17T11:43:14 IST" name="Default suite" finished-at="2023-11-17T11:43:15 IST" duration-ms="845">
     <groups>
     </groups>
-    <test started-at="2023-11-11T16:05:19 IST" name="Default test" finished-at="2023-11-11T16:05:20 IST" duration-ms="1141">
+    <test started-at="2023-11-17T11:43:14 IST" name="Default test" finished-at="2023-11-17T11:43:15 IST" duration-ms="845">
       <class name="com.testcases.LoginTest">
-        <test-method signature="VerfiyInvalidData(java.lang.String,java.lang.String)[pri:0, instance:com.testcases.LoginTest@1cbbffcd]" started-at="2023-11-11T16:05:19 IST" name="VerfiyInvalidData" data-provider="getdata" finished-at="2023-11-11T16:05:20 IST" duration-ms="1002" status="FAIL">
+        <test-method signature="VerfiyInvalidData(java.lang.String,java.lang.String)[pri:0, instance:com.testcases.LoginTest@1cbbffcd]" started-at="2023-11-17T11:43:14 IST" name="VerfiyInvalidData" data-provider="getdata" finished-at="2023-11-17T11:43:15 IST" duration-ms="773" status="FAIL">
           <exception class="org.testng.internal.reflect.MethodMatcherException">
             <message>
               <![CDATA[
@@ -51,22 +51,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerfiyInvalidData -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.LoginTest@1cbbffcd]" started-at="2023-11-11T16:05:20 IST" name="setup" finished-at="2023-11-11T16:05:20 IST" duration-ms="90" status="FAIL">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.LoginTest@1cbbffcd]" started-at="2023-11-17T11:43:15 IST" name="setup" finished-at="2023-11-17T11:43:15 IST" duration-ms="36" status="FAIL">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687]]>
+              <![CDATA[The driver executable does not exist: C:\Users\Admin\Downloads\edgedriver_win64.zip\msedgedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
-at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:125)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Admin\Downloads\edgedriver_win64.zip\msedgedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
 at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
 at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
 at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
 at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
-at com.base.Testbase.Initialization(Testbase.java:53)
-at com.testcases.LoginTest.setup(LoginTest.java:27)
+at com.base.Testbase.Initialization(Testbase.java:44)
+at com.testcases.LoginTest.setup(LoginTest.java:26)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -105,22 +106,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Verifylogin()[pri:0, instance:com.testcases.LoginTest@1cbbffcd]" started-at="2023-11-11T16:05:20 IST" name="Verifylogin" finished-at="2023-11-11T16:05:20 IST" duration-ms="0" status="SKIP">
+        <test-method signature="Verifylogin()[pri:0, instance:com.testcases.LoginTest@1cbbffcd]" started-at="2023-11-17T11:43:15 IST" name="Verifylogin" finished-at="2023-11-17T11:43:15 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687]]>
+              <![CDATA[The driver executable does not exist: C:\Users\Admin\Downloads\edgedriver_win64.zip\msedgedriver.exe]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
-at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:125)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Admin\Downloads\edgedriver_win64.zip\msedgedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
 at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
 at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
 at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
 at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
-at com.base.Testbase.Initialization(Testbase.java:53)
-at com.testcases.LoginTest.setup(LoginTest.java:27)
+at com.base.Testbase.Initialization(Testbase.java:44)
+at com.testcases.LoginTest.setup(LoginTest.java:26)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -159,7 +161,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Verifylogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.LoginTest@1cbbffcd]" started-at="2023-11-11T16:05:20 IST" name="teardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1699698920558" status="SKIP">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.LoginTest@1cbbffcd]" started-at="2023-11-17T11:43:15 IST" name="teardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1700201595503" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Nov 11 16:05:19 IST 2023</td>
+<td>Started on:</td><td>Fri Nov 17 11:43:14 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1141 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (845 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.testcases.LoginTest.setup()'><b>setup</b><br>Test class: com.testcases.LoginTest</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:125)
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Admin\Downloads\edgedriver_win64.zip\msedgedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
 	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
 	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
 	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
 	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at com.base.Testbase.Initialization(Testbase.java:53)
-	at com.testcases.LoginTest.setup(LoginTest.java:27)
+	at com.base.Testbase.Initialization(Testbase.java:44)
+	at com.testcases.LoginTest.setup(LoginTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,16 +120,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div><a href='#' onClick='toggleBox("stack-trace1076202543", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1076202543'><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:125)
+<div class='stack-trace' id='stack-trace1076202543'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Admin\Downloads\edgedriver_win64.zip\msedgedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
 	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
 	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
 	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
 	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at com.base.Testbase.Initialization(Testbase.java:53)
-	at com.testcases.LoginTest.setup(LoginTest.java:27)
+	at com.base.Testbase.Initialization(Testbase.java:44)
+	at com.testcases.LoginTest.setup(LoginTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -175,7 +177,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.testcases.LoginTest.teardown()'><b>teardown</b><br>Test class: com.testcases.LoginTest</td>
 <td></td>
-<td>-1699698920</td>
+<td>-1700201595</td>
 <td>com.testcases.LoginTest@1cbbffcd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
@@ -245,7 +247,7 @@ Arguments: [(java.lang.String) office chair,(java.lang.String) bravo HB,(java.la
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
+<td>0</td>
 <td>com.testcases.LoginTest@1cbbffcd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -257,16 +259,17 @@ Arguments: [(java.lang.String) office chair,(java.lang.String) bravo HB,(java.la
 </tr>
 <tr>
 <td title='com.testcases.LoginTest.Verifylogin()'><b>Verifylogin</b><br>Test class: com.testcases.LoginTest</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:125)
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Admin\Downloads\edgedriver_win64.zip\msedgedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
 	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
 	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
 	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
 	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at com.base.Testbase.Initialization(Testbase.java:53)
-	at com.testcases.LoginTest.setup(LoginTest.java:27)
+	at com.base.Testbase.Initialization(Testbase.java:44)
+	at com.testcases.LoginTest.setup(LoginTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -300,16 +303,17 @@ Arguments: [(java.lang.String) office chair,(java.lang.String) bravo HB,(java.la
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div><a href='#' onClick='toggleBox("stack-trace789982400", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace789982400'><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:125)
+<div class='stack-trace' id='stack-trace789982400'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Admin\Downloads\edgedriver_win64.zip\msedgedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
 	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:37)
 	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:90)
 	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
 	at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:96)
-	at com.base.Testbase.Initialization(Testbase.java:53)
-	at com.testcases.LoginTest.setup(LoginTest.java:27)
+	at com.base.Testbase.Initialization(Testbase.java:44)
+	at com.testcases.LoginTest.setup(LoginTest.java:26)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

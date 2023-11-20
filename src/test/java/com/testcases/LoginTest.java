@@ -7,15 +7,17 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.internal.Utils;
 
 import com.PageObjects.Login_functionality;
-import com.Utils.Utils;
+import com.Utils.Utils1;
 import com.base.Testbase;
 
 public class LoginTest extends Testbase {
-    private final String sheet="Sheet1";
+
 	Login_functionality lf;
-     
+	private String Sheetname= "Sheet1";
+
 	public LoginTest() throws Throwable {
 		super();
 	}
@@ -26,7 +28,8 @@ public class LoginTest extends Testbase {
 
 		Initialization();
 
-		lf = new Login_functionality(driver); 
+		lf = new Login_functionality(driver);
+
 	}
 
 	@Test
@@ -37,27 +40,28 @@ public class LoginTest extends Testbase {
 
 		String url = driver.getCurrentUrl();
 
-		Assert.assertEquals("http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard", url);
-
+		Assert.assertEquals("http://empirehome.myprojectsonline.co.in/EmpireHome/", url);
+ 
 	}
-	@Test(dataProvider="getdata",dataProviderClass=LoginTest.class)
-	 public void VerfiyInvalidData(String Username,String Password) throws Throwable
-	 {
-		 lf.DoLoginWithExcel(Username,Password);
-		 String url = driver.getCurrentUrl();
-		Assert.assertEquals(url,"http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard");
-	 }
-	@DataProvider 
-	public  Object[][] getdata() throws IOException
-	{
-		return Utils.readDataFromExcel(sheet);
-	}
+	    @Test(dataProvider="getdata",dataProviderClass=LoginTest.class)
+	    public void login(String Username,String Password) throws Throwable {
+	    	lf.DologinwithExcel(Username, Password);
+	    	String url = driver.getCurrentUrl();
+			Assert.assertEquals(url,"http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard");
+		 }
+	    
+	    @DataProvider
+	    
+	    public Object[][] getdata() throws IOException {
+	    
+	    	return Utils1.readDataFromExcel(Sheetname);
+	    }
 
 	@AfterMethod
 
 	public void teardown() {
 
-		driver.close();
+		//driver.close();
 
 	}
 
